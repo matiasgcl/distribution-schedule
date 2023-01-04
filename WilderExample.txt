@@ -1,0 +1,86 @@
+# Data file structure for the Distribution Schedule script
+# Number of lines will be checked prior to any computation (do not delete any comment)
+##################### First Part: BASIC INFO #####################
+# 1) Name of the token [string]
+# 2) Maximum Supply
+# 3) Total supply [comma separator is allowed]
+# 4) Number of categories for the allocation [int]
+##################### Complete it in the next 4 lines ######################
+Wilder $WILD
+500,000,000
+2021-05-07
+9
+##################### Second Part: Categories info #####################
+# For each category, you must fill (in the same order!)
+# 1) Name of the category [example: Public Sale]
+# 2) Percentage of TOTAL SUPPLY for this category [example: 10.5% or 10.5, both are valid]
+# 3) Percentage of tokens FOR THIS CATEGORY unlocked at genesis (i.e. immediatly unlocked, can be zero; if all tokens are unlocked at genesis, introduce 100)
+# 4) Initial lock period in months (can be zero) [example: 3.5]
+# 5) Periodicity for unlocks in months (can be zero if all tokens are released after locking period) [example: 12 if tokens are released one time per year, 1 if tokens are released monthly]
+# 6) Total unlock length in months NOT including the locking period (can be zero if all tokens are released after locking period) [example: 3*12 if tokens of this category are released on a 3 year horizon NOT including the initial locking period]
+# Note: Each category must be separated from the previous one with a header line
+##################### Complete it like the following example ######################
+######### For Category 1 ##########
+Private Sale
+11.25%
+15%
+0
+1
+12
+######### For Category 2 ##########
+Public Sale
+1.0416%
+100%
+0
+0
+0
+######### For Category 3 ##########
+Artists Incentives
+6%
+0%
+3
+1
+12
+######### For Category 4 ##########
+Marketing and Liq
+10%
+10%
+0
+1
+12
+######### For Category 5 ##########
+Advisors
+2.5%
+0%
+6
+1
+12
+######### For Category 6 ##########
+Community Building
+10%
+0%
+3
+1
+12
+######### For Category 7 ##########
+Team
+25%
+0%
+12
+1
+12
+######### For Category 8 ##########
+Partners and Eco
+10%
+0%
+3
+1
+12
+######### For Category 9 ##########
+Reserve
+24.208%
+0%
+6
+1
+24
+######### END OF FILE (do not delete this) #########
